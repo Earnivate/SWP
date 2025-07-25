@@ -1,0 +1,134 @@
+/* Nav bar layout */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1A428A;
+  padding: 40px 80px;
+  position: relative;
+}
+
+/* Logo centered using absolute center + transform */
+.logo-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.logo {
+  max-width: 160px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Free Estimates between logo and menu */
+.estimates-button {
+  margin-left: auto;
+  margin-right: 300px; /* space before menu */
+}
+
+.free-estimates {
+  max-width: 180px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.free-estimates:hover {
+  transform: scale(1.05);
+}
+
+/* Menu icon far right */
+.menu-icon {
+  color: white;
+  font-size: 56px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.menu-icon span {
+  font-size: 20px;
+  display: block;
+  margin-top: 2px;
+}
+
+/* Dropdown nav menu */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: #143064;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 0;
+  width: 90%;
+  max-width: 400px;
+  list-style: none;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links li {
+  border-bottom: 1px solid #1A428A;
+}
+
+.nav-links li:last-child {
+  border-bottom: none;
+}
+
+.nav-links li a {
+  display: block;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+background
+}
+
+.estimate-form {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.estimate-form label {
+  font-weight: bold;
+  color: #1A428A;
+}
+
+.estimate-form input,
+.estimate-form textarea {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.estimate-form button {
+  background-color: #1A428A;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.estimate-form button:hover {
+  background-color: #16376f;
+}
